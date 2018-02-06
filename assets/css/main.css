@@ -643,6 +643,7 @@ body {
   background-color: rgb(187, 0, 0);
   color: rgb(239, 239, 239);
   border-color: rgb(150, 0, 0);
+  white-space: normal;
 }
 
 .btn-default:hover, .btn-default:focus {
