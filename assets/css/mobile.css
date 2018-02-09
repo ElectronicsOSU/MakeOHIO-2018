@@ -3,5 +3,21 @@
 		max-width:100%;
 		margin-right:0px;
 		margin-left:0px;
+		margin:0px;
+	}
+	.honda-img{
+		margin-top:30px;
+	}
+}
+
+@media all and (max-width: 767px) {
+    .scale-img{
+		max-width:100%;
+		margin-right:0px;
+		margin-left:0px;
+		margin:0px;
+	}
+	.honda-img{
+		margin-top:30px;
 	}
 }
