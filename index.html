@@ -38,7 +38,11 @@
   <link rel="stylesheet" href="assets/css/mobile.css">
   
   <!-- JS -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  
+  <!-- JS LOGO SPIN -->
+  <script src='assets/js/spin.min.js' defer></script>
+  <script src='assets/js/spin-config.js' defer></script>
 </head>
 
 <body>
@@ -72,9 +76,7 @@
     <div class="container centered">
       <div id="brand" class="hidden">
         <!-- MAIN LOGO -->
-        <a href="http://hack.osu.edu/" target="_blank">
-          <img src="assets/img/branding/MakeOHIO 2018 Logo.png" alt="MakeOHI/O logo." style="width:30%">
-        </a>
+          <img title="Give me a spin by dragging me with your mouse and then releasing!" data-toggle="tooltip" data-placement="right" id="knob" src="https://make.osu.edu/assets/img/branding/MakeOHIO%202018%20Logo.png" alt="MakeOHI/O logo." style="width:30%">
       </div>
     </div>
 
