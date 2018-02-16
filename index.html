@@ -43,6 +43,11 @@
   <!-- JS LOGO SPIN -->
   <script src='assets/js/spin.min.js' defer></script>
   <script src='assets/js/spin-config.js' defer></script>
+  
+  <!-- CHALLENGES MODAL -->
+  <link rel="stylesheet" href="assets/css/modal.css">
+  <script src="assets/js/modal.js" defer></script>
+  
 </head>
 
 <body>
@@ -63,7 +68,8 @@
           <li><a href="#faqs" class="smoothScroll">faq</a></li>
           <li><a href="#agenda" class="smoothScroll">agenda</a></li>
           <li><a href="#s" class="smoothScroll">sponsors</a></li>
-	  <li><a href="#judges" class="smoothScroll">judges</a></li>
+	      <li><a href="#judges" class="smoothScroll">judges</a></li>
+		  <li><a href="#challenges" class="smoothScroll">challenges</a></li>
           <li><a href="https://docs.google.com/spreadsheets/d/1be8mGe-7cA16eylDQijJI7tm_3s7pUdKZSdfJetOt3Q/edit?usp=sharing" target="_blank">hardware</a></li>
           <!--<li><a href="http://make-oh.io/live" target="_blank" class="smoothScroll">live</a></li>-->
         </ul>
@@ -88,11 +94,31 @@
         <li><a href="#faqs" class="smoothScroll">faq</a></li>
         <li><a href="#agenda" class="smoothScroll">agenda</a></li>
         <li><a href="#s" class="smoothScroll">sponsors</a></li>
-	<li><a href="#judges" class="smoothScroll">judges</a></li>
+	    <li><a href="#judges" class="smoothScroll">judges</a></li>
+		<li><a id="challengelink" href="#challenges" class="smoothScroll">challenges</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/1be8mGe-7cA16eylDQijJI7tm_3s7pUdKZSdfJetOt3Q/edit?usp=sharing" target="_blank">hardware</a></li>
         <!--<li><a href="http://make-oh.io/live" target="_blank" class="smoothScroll">live</a></li>-->
       </ul>
     </div>
+  </div>
+  
+  <!-- The Modal -->
+  <div id="challengesModal" class="modal">
+  
+    <!-- Modal content -->
+    <div class="img-responsive modal-content" style="width: 600px">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 class="centered">Challenges</h2>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" style="width: 600px" src="assets/img/challenges/HelpDogTreat.png">
+      </div>
+      <div class="modal-footer">
+        <h3>More to come!</h3>
+      </div>
+    </div>
+  
   </div>
 
 
