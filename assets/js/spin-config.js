@@ -4,7 +4,8 @@ $('img').tooltip({
    trigger: 'manual'
 });
 $(document).ready(function() {
-    $('img').tooltip('show');
+    setTimeout(function(){
+    $('img').tooltip('show'); }, 750);
     setTimeout(function(){
     $('img').tooltip('hide'); }, 7000);
 });
