@@ -1,6 +1,8 @@
 var apiCall = "https://api.flickr.com/services/feeds/photos_public.gne?id=132038343@N02&tags=featured&lang=en-us&format=json&jsoncallback=?";
 
-
+$('button').tooltip({
+   trigger: 'manual'
+});
 
 // Back to Top
 
@@ -46,17 +48,20 @@ $(document).ready(function() {
         $.each(data.items, function(i,item){
           $("<img data-u='image'/>").attr("src", item.media.m).appendTo(".flickr-stream")
           .wrap("<div>" + "</div>");
+    });
   });
-});
+  
+  
 
-
-
-
-
-
-
-
+  setTimeout(showRegistrationDeadlineTooltip(), 750);
+  setTimeout(window.addEventListener("resize", showRegistrationDeadlineTooltip), 750);
 
 });
 
+function showRegistrationDeadlineTooltip() {
+  if ($(window).width() < 1100)
+    $('button').tooltip('hide');
+  if( ($(window).width() >= 1100) && ($(window).scrollTop() === 0) )
+    $('button').tooltip('show');
+}
 
