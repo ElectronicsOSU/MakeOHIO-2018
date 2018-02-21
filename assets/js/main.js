@@ -51,17 +51,20 @@ $(document).ready(function() {
     });
   });
   
-  
+  /*
 
   setTimeout(showRegistrationDeadlineTooltip(), 750);
   setTimeout(window.addEventListener("resize", showRegistrationDeadlineTooltip), 750);
+  
+  */
 
 });
 
+/*
 function showRegistrationDeadlineTooltip() {
   if ($(window).width() < 1100)
     $('button').tooltip('hide');
   if( ($(window).width() >= 1100) && ($(window).scrollTop() === 0) )
     $('button').tooltip('show');
 }
-
+*/
